@@ -10,7 +10,7 @@ const prizes = vars.prizes;
 const tableOfWinnings = vars.tableOfWinnings;
 var valid = false;
 
-if(highestBall < 1 || numberBalls < 1 || highestBall< numberBalls){
+if(highestBall < 1 || numberBalls < 1 || highestBall < numberBalls){
   console.log(`You can't have a highestBall or numberBalls Less than 0.\nYou also cannot have a highestBall less than numberBalls.\nCheck that your highestBall / numberBalls are above 1, and that highestBall is not less than your numberBalls`);
 } else {
   valid = true;
