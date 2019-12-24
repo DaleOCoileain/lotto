@@ -18,30 +18,30 @@ if(highestBall < 1 || numberBalls < 1 || highestBall< numberBalls){
 
 function getRandomList(size, lowest, highest){
   var numbers = [];
-	for(i=0;i<size;i++){
-		var add = true;
-		var randomNumber = Math.floor(Math.random() * highest) + 1;
-		for(y=0;y<highest;y++){
-			if(numbers[y] == randomNumber){
-				add = false;
-			}
-		}
-		if(add) {
-			numbers.push(randomNumber);
-		} else {
-			i--;
-		}
-	}
-	var highestNumber = 0;
-	for(m=0;m<numbers.length;m++){
-		for(n=m+1;n<numbers.length;n++){
-			if(numbers[n] < numbers[m]){
-				highestNumber = numbers[m];
-				numbers[m] = numbers[n];
-				numbers[n] = highestNumber;
-			}
-		}
-	}
+  for(i=0;i<size;i++){
+    var add = true;
+    var randomNumber = Math.floor(Math.random() * highest) + 1;
+    for(y=0;y<highest;y++){
+      if(numbers[y] == randomNumber){
+         add = false;
+      }
+    }
+    if(add) {
+      numbers.push(randomNumber);
+    } else {
+      i--;
+    }
+  }
+  var highestNumber = 0;
+  for(m=0;m<numbers.length;m++){
+    for(n=m+1;n<numbers.length;n++){
+      if(numbers[n] < numbers[m]){
+        highestNumber = numbers[m];
+        numbers[m] = numbers[n];
+        numbers[n] = highestNumber;
+      }
+    }
+  }
   return numbers;
 }
 
