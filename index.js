@@ -84,11 +84,11 @@ function prizeList(){
 }
 
 if(valid){
-  var clientNumbers = getRandomList(numberBalls, 1, highestBall);
-  var winningNumbers = getRandomList(numberBalls, 1, highestBall);
-  var oddsOfWinning = calculateOddOfWinning();
-  var isWinningTicket = isWinner(clientNumbers,winningNumbers);
-  var prizeListTable = prizeList();
+  const clientNumbers = getRandomList(numberBalls, 1, highestBall);
+  const winningNumbers = getRandomList(numberBalls, 1, highestBall);
+  const oddsOfWinning = calculateOddOfWinning();
+  const isWinningTicket = isWinner(clientNumbers,winningNumbers);
+  const prizeListTable = prizeList();
   console.log(`Your Numbers: ${clientNumbers}`)
   console.log(`Winning Numbers: ${winningNumbers}`)
   console.log(isWinningTicket);
