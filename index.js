@@ -1,6 +1,6 @@
 const vars = require('./variables.js');
-var colors = require('colors');
-var blue = colors.blue;
+const colors = require('colors');
+const blue = colors.blue;
 
 const highestBall = vars.highestBall;
 const numberBalls = vars.numberBalls;
