@@ -33,12 +33,12 @@ function getRandomList(size, lowest, highest){
     }
   }
   var highestNumber = 0;
-  for(m=0;m<numbers.length;m++){
-    for(n=m+1;n<numbers.length;n++){
-      if(numbers[n] < numbers[m]){
-        highestNumber = numbers[m];
-        numbers[m] = numbers[n];
-        numbers[n] = highestNumber;
+  for(i=0;i<numbers.length;i++){
+    for(j=0;j<numbers.length;j++){
+      if(numbers[j] < numbers[j+1]){
+        highestNumber = numbers[j];
+        numbers[j] = numbers[j+1];
+        numbers[j+1] = highestNumber;
       }
     }
   }
