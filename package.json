@@ -1,7 +1,7 @@
 {
   "name": "lotto",
   "version": "1.0.0",
-  "description": "",
+  "description": "This very basic NodeJS application allows you to calculate random arrays of winning lotto numbers as well as the customers chosen numbers. With this we can print out a if they're a winner, a table with the prizes and stats on the chances of winning the lotto.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/DaleOCoileain/lotto.git"
   },
-  "author": "",
+  "author": "Dale C",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DaleOCoileain/lotto/issues"
@@ -18,9 +18,5 @@
   "homepage": "https://github.com/DaleOCoileain/lotto#readme",
   "dependencies": {
     "colors": "^1.4.0"
-  },
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-google": "^0.14.0"
   }
 }
